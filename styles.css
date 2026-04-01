@@ -1584,6 +1584,23 @@ button {
     grid-row: span 1;
     aspect-ratio: 4/3;
   }
+
+  .recap__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .insights__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upcoming__layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .section-header__title {
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1633,6 +1650,26 @@ button {
     font-size: clamp(2rem, 8vw, 3.2rem);
   }
 
+  .hero__subtitle {
+    font-size: clamp(0.55rem, 2.5vw, 0.85rem);
+    letter-spacing: 0.15em;
+  }
+
+  .hero__crest {
+    width: clamp(120px, 28vw, 160px);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -1662,5 +1699,176 @@ button {
 
   .gallery__item {
     aspect-ratio: 16/10;
+  }
+
+  .recap__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .recap__card {
+    padding: 24px 16px;
+  }
+
+  .recap__card-value {
+    font-size: 1.8rem;
+  }
+
+  .insights__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .insight {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px 16px;
+  }
+
+  .insight__icon {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .insight__value {
+    font-size: 1.3rem;
+  }
+
+  .upcoming__layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .upcoming__cta-card {
+    padding: 28px 24px;
+  }
+
+  .commissioner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .commissioner__avatar {
+    margin: 0 auto;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 20px 16px;
+  }
+
+  .stat-card__number {
+    font-size: 2rem;
+  }
+
+  .league__card {
+    padding: 28px 20px;
+  }
+
+  .contact__crest {
+    width: 80px;
+  }
+
+  .section-header__title {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+
+  .about__lead {
+    font-size: 1rem;
+  }
+
+  .lightbox__prev,
+  .lightbox__next {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .lightbox__prev {
+    left: 4px;
+  }
+
+  .lightbox__next {
+    right: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 16px;
+    --section-padding: 60px;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero__crest {
+    width: 110px;
+    margin-bottom: 20px;
+  }
+
+  .hero__badge {
+    font-size: 0.6rem;
+    padding: 6px 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__desc {
+    font-size: 0.85rem;
+  }
+
+  .hero__actions .btn {
+    font-size: 0.8rem;
+    padding: 14px 28px;
+  }
+
+  .recap__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recap__card-value {
+    font-size: 2rem;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .league__grid {
+    gap: 16px;
+  }
+
+  .upcoming__detail h4 {
+    font-size: 0.95rem;
+  }
+
+  .upcoming__detail p {
+    font-size: 0.85rem;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header__title {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+  }
+
+  .contact__form {
+    padding: 24px 16px;
+  }
+
+  .footer {
+    padding: 40px 0 24px;
   }
 }
